@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Montserrat&family=Noto+Sans+TC:wght@500&family=Poppins&family=Roboto&display=swap');
+body{
+    background: #000;
+}
+.nav-item a{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-weight: 700;
+}
+.carousel{
+    align-items: center;
+    margin: 5% auto ;
+    border-radius: 10px;
+}
+.logo{
+    margin: 5%;
+    width: 70%;
+}
+.logo h1{
+    margin-left: 5%; 
+    margin-top: -5%;
+    font-family: 'Anton', sans-serif;
+    color: red;
+    font-size: 150px;
+}
+.text::after{
+content: "I am";
+}
+.text:hover{
+    color: rgb(255, 255, 255);
+    content: "";
+   
+}
+.text:hover::after{
+    content: "Work.";
+}
+
+.name::after{
+content: "Musharaf";
+}
+.name:hover{
+    color: rgb(255, 255, 255);
+    content: "";
+   
+}
+.name:hover::after{
+    content: "Contact.";
+}
+
+.slidetext{
+    margin: 0% 0% 0% 50%;
+    color: rgb(255, 255, 255);
+    font-family: "Montserrat";
+    font-size: 20px;
+    animation: animate infinite  1.4s  ease-in-out;
+    cursor: pointer;
+}
+
+
+@keyframes animate {
+    0%{
+        margin-top: -2%;
+    }
+    50%{
+        margin-top: 0%;
+    }
+    100%{
+        margin-top: -2%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .logo{
+        margin-top: 30%;
+        width: 70%;
+    }
+    .logo h1{
+        margin-left: 5%; 
+        margin-top: -5%;
+        font-family: 'Anton', sans-serif;
+        color: red;
+        font-size: 85px;
+    
+    }
+    .slidetext{
+        margin: 75% 0% 0% 35%;
+    }
+    
+  
+  }
